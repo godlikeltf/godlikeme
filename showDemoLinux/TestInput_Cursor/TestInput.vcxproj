@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2545BF3B-DC0D-38EB-AE57-E7D1DC9EE26E}</ProjectGuid>
+    <RootNamespace>TestInput</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>TestInput</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>TestInput</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">TestInput</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">TestInput</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtCore";"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtGui";"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include";"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\ActiveQt";"debug";".";d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\mkspecs\default;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_GUI_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;QT_THREAD_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>.\</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\lib\qtmaind.lib;d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\lib\QtGuid4.lib;d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\lib\QtCored4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\TestInput.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_GUI_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;QT_THREAD_SUPPORT;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtCore";"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtGui";"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include";"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\ActiveQt";"release";".";d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\mkspecs\default;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_NO_DEBUG;QT_GUI_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;QT_THREAD_SUPPORT;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>.\</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\lib\qtmain.lib;d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\lib\QtGui4.lib;d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\lib\QtCore4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\TestInput.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_NO_DEBUG;QT_GUI_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;QT_THREAD_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="HanziManager.cpp" />
+    <ClCompile Include="formhanziselector.cpp" />
+    <ClCompile Include="formhanzitable.cpp" />
+    <ClCompile Include="formnumpad.cpp" />
+    <ClCompile Include="formsymbolpad.cpp" />
+    <ClCompile Include="inputmethod.cpp" />
+    <ClCompile Include="keyboard.cpp" />
+    <ClCompile Include="login.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="padbase.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ChineseTranslator.h" />
+    <ClInclude Include="HanziManager.h" />
+    <CustomBuild Include="formhanziselector.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe;formhanziselector.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtCore" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtGui" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\ActiveQt" -I"debug" -I"." -Id:\QtSDK\Desktop\Qt\4.8.1\msvc2010\mkspecs\default -D_MSC_VER=1600 -DWIN32 formhanziselector.h -o debug\moc_formhanziselector.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC formhanziselector.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_formhanziselector.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe;formhanziselector.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtCore" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtGui" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\ActiveQt" -I"release" -I"." -Id:\QtSDK\Desktop\Qt\4.8.1\msvc2010\mkspecs\default -D_MSC_VER=1600 -DWIN32 formhanziselector.h -o release\moc_formhanziselector.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC formhanziselector.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_formhanziselector.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="formhanzitable.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe;formhanzitable.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtCore" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtGui" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\ActiveQt" -I"debug" -I"." -Id:\QtSDK\Desktop\Qt\4.8.1\msvc2010\mkspecs\default -D_MSC_VER=1600 -DWIN32 formhanzitable.h -o debug\moc_formhanzitable.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC formhanzitable.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_formhanzitable.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe;formhanzitable.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtCore" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtGui" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\ActiveQt" -I"release" -I"." -Id:\QtSDK\Desktop\Qt\4.8.1\msvc2010\mkspecs\default -D_MSC_VER=1600 -DWIN32 formhanzitable.h -o release\moc_formhanzitable.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC formhanzitable.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_formhanzitable.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="formnumpad.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe;formnumpad.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtCore" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtGui" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\ActiveQt" -I"debug" -I"." -Id:\QtSDK\Desktop\Qt\4.8.1\msvc2010\mkspecs\default -D_MSC_VER=1600 -DWIN32 formnumpad.h -o debug\moc_formnumpad.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC formnumpad.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_formnumpad.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe;formnumpad.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtCore" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtGui" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\ActiveQt" -I"release" -I"." -Id:\QtSDK\Desktop\Qt\4.8.1\msvc2010\mkspecs\default -D_MSC_VER=1600 -DWIN32 formnumpad.h -o release\moc_formnumpad.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC formnumpad.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_formnumpad.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="formsymbolpad.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe;formsymbolpad.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtCore" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtGui" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\ActiveQt" -I"debug" -I"." -Id:\QtSDK\Desktop\Qt\4.8.1\msvc2010\mkspecs\default -D_MSC_VER=1600 -DWIN32 formsymbolpad.h -o debug\moc_formsymbolpad.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC formsymbolpad.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_formsymbolpad.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe;formsymbolpad.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtCore" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtGui" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\ActiveQt" -I"release" -I"." -Id:\QtSDK\Desktop\Qt\4.8.1\msvc2010\mkspecs\default -D_MSC_VER=1600 -DWIN32 formsymbolpad.h -o release\moc_formsymbolpad.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC formsymbolpad.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_formsymbolpad.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="inputmethod.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe;inputmethod.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtCore" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtGui" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\ActiveQt" -I"debug" -I"." -Id:\QtSDK\Desktop\Qt\4.8.1\msvc2010\mkspecs\default -D_MSC_VER=1600 -DWIN32 inputmethod.h -o debug\moc_inputmethod.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC inputmethod.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_inputmethod.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe;inputmethod.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtCore" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtGui" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\ActiveQt" -I"release" -I"." -Id:\QtSDK\Desktop\Qt\4.8.1\msvc2010\mkspecs\default -D_MSC_VER=1600 -DWIN32 inputmethod.h -o release\moc_inputmethod.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC inputmethod.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_inputmethod.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="keyboard.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe;keyboard.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtCore" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtGui" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\ActiveQt" -I"debug" -I"." -Id:\QtSDK\Desktop\Qt\4.8.1\msvc2010\mkspecs\default -D_MSC_VER=1600 -DWIN32 keyboard.h -o debug\moc_keyboard.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC keyboard.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_keyboard.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe;keyboard.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtCore" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtGui" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\ActiveQt" -I"release" -I"." -Id:\QtSDK\Desktop\Qt\4.8.1\msvc2010\mkspecs\default -D_MSC_VER=1600 -DWIN32 keyboard.h -o release\moc_keyboard.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC keyboard.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_keyboard.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="login.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe;login.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtCore" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtGui" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\ActiveQt" -I"debug" -I"." -Id:\QtSDK\Desktop\Qt\4.8.1\msvc2010\mkspecs\default -D_MSC_VER=1600 -DWIN32 login.h -o debug\moc_login.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC login.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_login.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe;login.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtCore" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtGui" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\ActiveQt" -I"release" -I"." -Id:\QtSDK\Desktop\Qt\4.8.1\msvc2010\mkspecs\default -D_MSC_VER=1600 -DWIN32 login.h -o release\moc_login.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC login.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_login.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="padbase.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe;padbase.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtCore" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtGui" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\ActiveQt" -I"debug" -I"." -Id:\QtSDK\Desktop\Qt\4.8.1\msvc2010\mkspecs\default -D_MSC_VER=1600 -DWIN32 padbase.h -o debug\moc_padbase.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC padbase.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_padbase.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe;padbase.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtCore" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtGui" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include" -I"d:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\ActiveQt" -I"release" -I"." -Id:\QtSDK\Desktop\Qt\4.8.1\msvc2010\mkspecs\default -D_MSC_VER=1600 -DWIN32 padbase.h -o release\moc_padbase.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC padbase.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_padbase.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_formhanziselector.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_formhanziselector.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_formhanzitable.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_formhanzitable.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_formnumpad.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_formnumpad.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_formsymbolpad.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_formsymbolpad.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_inputmethod.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_inputmethod.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_keyboard.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_keyboard.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_login.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_login.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_padbase.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_padbase.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_keypad.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_keypad.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="ui_formhanziselector.h" />
+    <ClInclude Include="ui_formhanzitable.h" />
+    <ClInclude Include="ui_formnumpad.h" />
+    <ClInclude Include="ui_formsymbolpad.h" />
+    <ClInclude Include="ui_keyboard.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="formhanziselector.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\uic.exe;formhanziselector.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\uic.exe formhanziselector.ui -o ui_formhanziselector.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC formhanziselector.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_formhanziselector.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\uic.exe;formhanziselector.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\uic.exe formhanziselector.ui -o ui_formhanziselector.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC formhanziselector.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_formhanziselector.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="formhanzitable.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\uic.exe;formhanzitable.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\uic.exe formhanzitable.ui -o ui_formhanzitable.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC formhanzitable.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_formhanzitable.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\uic.exe;formhanzitable.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\uic.exe formhanzitable.ui -o ui_formhanzitable.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC formhanzitable.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_formhanzitable.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="formnumpad.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\uic.exe;formnumpad.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\uic.exe formnumpad.ui -o ui_formnumpad.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC formnumpad.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_formnumpad.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\uic.exe;formnumpad.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\uic.exe formnumpad.ui -o ui_formnumpad.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC formnumpad.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_formnumpad.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="formsymbolpad.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\uic.exe;formsymbolpad.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\uic.exe formsymbolpad.ui -o ui_formsymbolpad.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC formsymbolpad.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_formsymbolpad.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\uic.exe;formsymbolpad.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\uic.exe formsymbolpad.ui -o ui_formsymbolpad.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC formsymbolpad.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_formsymbolpad.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="keyboard.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\uic.exe;keyboard.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\uic.exe keyboard.ui -o ui_keyboard.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC keyboard.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_keyboard.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\uic.exe;keyboard.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\uic.exe keyboard.ui -o ui_keyboard.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC keyboard.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_keyboard.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="picture\keypad\arrow-big-01.png" />
+    <None Include="picture\keypad\arrow-big-02.png" />
+    <None Include="picture\keypad\arrow-big-03.png" />
+    <None Include="picture\keypad\arrow-big-04.png" />
+    <None Include="picture\keypad\arrow-small-09.png" />
+    <None Include="picture\keypad\backspace.png" />
+    <None Include="picture\keypad\br_down.png" />
+    <None Include="picture\keypad\br_left.png" />
+    <None Include="picture\keypad\br_right.png" />
+    <None Include="picture\keypad\br_up.png" />
+    <None Include="picture\keypad\down.png" />
+    <None Include="picture\keypad\f0e2.png" />
+    <None Include="picture\keypad\keyboard.jpg" />
+    <CustomBuild Include="keypad.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\rcc.exe;keypad.qrc;picture\keypad\arrow-big-01.png;picture\keypad\arrow-big-02.png;picture\keypad\arrow-big-03.png;picture\keypad\arrow-big-04.png;picture\keypad\arrow-small-09.png;picture\keypad\backspace.png;picture\keypad\br_down.png;picture\keypad\br_left.png;picture\keypad\br_right.png;picture\keypad\br_up.png;picture\keypad\down.png;picture\keypad\f0e2.png;picture\keypad\keyboard.jpg;picture\keypad\left.png;picture\keypad\power-shutdown.png;picture\keypad\right.png;picture\keypad\top.png;picture\keypad\triangle-down.png;picture\keypad\triangle-left.png;picture\keypad\triangle-right.png;picture\keypad\triangle-up.png;picture\logo.png;picture\manager.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\rcc.exe -name keypad keypad.qrc -o debug\qrc_keypad.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">RCC keypad.qrc</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\qrc_keypad.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\rcc.exe;keypad.qrc;picture\keypad\arrow-big-01.png;picture\keypad\arrow-big-02.png;picture\keypad\arrow-big-03.png;picture\keypad\arrow-big-04.png;picture\keypad\arrow-small-09.png;picture\keypad\backspace.png;picture\keypad\br_down.png;picture\keypad\br_left.png;picture\keypad\br_right.png;picture\keypad\br_up.png;picture\keypad\down.png;picture\keypad\f0e2.png;picture\keypad\keyboard.jpg;picture\keypad\left.png;picture\keypad\power-shutdown.png;picture\keypad\right.png;picture\keypad\top.png;picture\keypad\triangle-down.png;picture\keypad\triangle-left.png;picture\keypad\triangle-right.png;picture\keypad\triangle-up.png;picture\logo.png;picture\manager.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\bin\rcc.exe -name keypad keypad.qrc -o release\qrc_keypad.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">RCC keypad.qrc</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\qrc_keypad.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="picture\keypad\left.png" />
+    <None Include="picture\logo.png" />
+    <None Include="picture\manager.png" />
+    <None Include="picture\keypad\power-shutdown.png" />
+    <None Include="picture\keypad\right.png" />
+    <None Include="picture\keypad\top.png" />
+    <None Include="picture\keypad\triangle-down.png" />
+    <None Include="picture\keypad\triangle-left.png" />
+    <None Include="picture\keypad\triangle-right.png" />
+    <None Include="picture\keypad\triangle-up.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
